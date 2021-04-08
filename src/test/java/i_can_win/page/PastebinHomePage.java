@@ -39,25 +39,25 @@ public class PastebinHomePage {
         return this;
     }
 
-    public PastebinHomePage printCodeInNewPasteForm(String text) throws InterruptedException {
+    public PastebinHomePage printCodeInNewPasteForm(String text) {
         WebElement newPasteTextArea = waitForElementLocatedBy(driver, By.id("postform-text"));
         newPasteTextArea.sendKeys(text);
         return this;
     }
 
-    public PastebinHomePage chooseExpirationForTenMinutes() throws InterruptedException {
+    public PastebinHomePage chooseExpirationForTenMinutes() {
         pastExpirationDropDownList.click();
         tenMinutesExpiration.click();
         return this;
     }
 
-    public PastebinHomePage pasteName(String name) throws InterruptedException {
+    public PastebinHomePage pasteName(String name) {
         WebElement pasteNameArea = waitForElementLocatedBy(driver, By.id("postform-name"));
         pasteNameArea.sendKeys(name);
         return this;
     }
 
-    public PastebinHomePage createNewPaste() throws InterruptedException {
+    public PastebinHomePage createNewPaste() {
         WebElement pasteNameArea = waitForElementLocatedBy(driver, By.xpath("//button[text()='Create New Paste']"));
         createNewPasteButton.click();
         return this;
