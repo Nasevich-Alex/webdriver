@@ -1,5 +1,6 @@
 package i_can_win.test;
 
+import i_can_win.page.PastebinHomePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;

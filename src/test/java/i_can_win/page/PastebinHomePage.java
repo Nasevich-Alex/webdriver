@@ -1,4 +1,4 @@
-package i_can_win.test;
+package i_can_win.page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
