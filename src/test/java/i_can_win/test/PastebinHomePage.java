@@ -1,4 +1,4 @@
-package i_can_win.page;
+package i_can_win.test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,10 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import javax.jws.WebResult;
 
 public class PastebinHomePage {
     private static final String HOMEPAGE_URL = "https://pastebin.com/";
@@ -17,9 +14,6 @@ public class PastebinHomePage {
 
     @FindBy(id = "postform-text")
     private WebElement newPasteTextArea;
-
-    @FindBy(xpath = "//*[@id=\"w0\"]/div[5]/div[1]/div[2]/div/span/span[1]/span/span[2]")
-    WebElement pasteExpirationButton;
 
     @FindBy(id = "select2-postform-expiration-container")
     private WebElement pastExpirationDropDownList;
